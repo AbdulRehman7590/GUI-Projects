@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 
 namespace GSMS.DL
-{
+{ 
     internal class Misc
     {
         public static void ShowUserData(Label pname1, Label pname2, User user)
