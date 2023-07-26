@@ -28,8 +28,6 @@ D:\2nd semester\OOP\GUI\GSMS\GSMS\bin\Debug\GSMS.exe.config
 D:\2nd semester\OOP\GUI\GSMS\GSMS\bin\Debug\GSMS.exe
 D:\2nd semester\OOP\GUI\GSMS\GSMS\bin\Debug\GSMS.pdb
 D:\2nd semester\OOP\GUI\GSMS\GSMS\bin\Debug\Guna.UI2.dll
-D:\2nd semester\OOP\GUI\GSMS\GSMS\bin\Debug\Newtonsoft.Json.dll
-D:\2nd semester\OOP\GUI\GSMS\GSMS\bin\Debug\Newtonsoft.Json.xml
 D:\2nd semester\OOP\GUI\GSMS\GSMS\obj\Debug\GSMS.csproj.AssemblyReference.cache
 D:\2nd semester\OOP\GUI\GSMS\GSMS\obj\Debug\GSMS.csproj.SuggestedBindingRedirects.cache
 D:\2nd semester\OOP\GUI\GSMS\GSMS\obj\Debug\GSMS.GUI.AddProduct.resources

@@ -1,15 +1,17 @@
 ﻿using GSMS.BL;
 using GSMS.GUI;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 
 namespace GSMS.DL
-{ 
+{
     internal class Misc
     {
         public static void ShowUserData(Label pname1, Label pname2, User user)
@@ -99,7 +101,7 @@ namespace GSMS.DL
         public static DataGridViewButtonColumn GV_AddButton(string headingname, string name)
         {
             DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
-            
+
             buttonColumn.HeaderText = headingname;
             buttonColumn.Text = headingname;
             buttonColumn.UseColumnTextForButtonValue = true;
@@ -113,7 +115,27 @@ namespace GSMS.DL
 
         public static void Read_Message(string name, Panel pname)
         {
-            List<string> list = UserDL.ReceivedMessage(name);
+            int count = 0;
+            List<string> list1;
+            List<string> list = new List<string>();
+            do
+            {
+                list1 = UserDL.ReceivedMessage(name, count);
+
+                if (list1 != null)
+                {
+                    count++;
+
+                    for (int i = 1; i < list1.Count; i++)
+                    {
+                        list.Add(list1[i]);
+                    }
+
+                    list.Add("------------------------------------------------------------------------------------------");
+                }
+            }
+            while (list1 != null);
+
             if (list?.Count > 0)
             {
                 ReadMessages form = new ReadMessages(list);
@@ -124,7 +146,36 @@ namespace GSMS.DL
                 MessageBox.Show("No message Revceived");
             }
         }
-        
+
+        public static void See_Announcements(Panel pname)
+        {
+            int count = 0;
+            List<string> list1;
+            List<string> list = new List<string>();
+            do
+            {
+                list1 = UserDL.WatchAnnouncement(count);
+
+                if (list1 != null)
+                {
+                    count++;
+                    list.AddRange(list1);
+                    list.Add("------------------------------------------------------------------------------------------");
+                }
+            }
+            while (list1 != null);
+
+            if (list?.Count > 0)
+            {
+                ReadMessages form = new ReadMessages(list);
+                Set_Form(form, pname);
+            }
+            else
+            {
+                MessageBox.Show("No new Announcements");
+            }
+        }
+
 
     }
 }

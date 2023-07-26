@@ -36,9 +36,6 @@
     <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -60,7 +57,6 @@
     <Compile Include="BL\Employee.cs" />
     <Compile Include="BL\Products.cs" />
     <Compile Include="BL\User.cs" />
-    <Compile Include="DL\DataContainer.cs" />
     <Compile Include="DL\EmployeeDL.cs" />
     <Compile Include="DL\Misc.cs" />
     <Compile Include="DL\ProductsDL.cs" />

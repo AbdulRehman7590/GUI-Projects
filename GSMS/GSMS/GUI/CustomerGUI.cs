@@ -204,8 +204,7 @@ namespace GSMS.GUI
         private void C_Announcement_btn_Click(object sender, EventArgs e)
         {
             HideAllMenus();
-
-
+            Misc.See_Announcements(menu_Display_Panel);
         }
 
 

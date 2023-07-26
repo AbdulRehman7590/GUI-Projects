@@ -7,6 +7,7 @@ using System.Threading;
 using System.IO;
 using GSMS.BL;
 using GSMS.Enums;
+using System.Web.UI.WebControls;
 
 namespace GSMS.DL
 {
@@ -57,6 +58,7 @@ namespace GSMS.DL
         {
             LoginInfo.Add(a);
         }
+
         public static void RemoveFroUserList(int idx)
         {
             LoginInfo.RemoveAt(idx);
@@ -74,7 +76,7 @@ namespace GSMS.DL
             UpdatePin();
         }
 
-        
+
         public static bool CheckAdmin()
         {
             bool flag = false;
@@ -89,7 +91,7 @@ namespace GSMS.DL
             return flag;
         }
 
-        
+
         public static int IsUserExists(string cname)
         {
             int num = -1;
@@ -128,7 +130,7 @@ namespace GSMS.DL
         }
 
 
-        
+
         public static void SentAnnouncement(string loginName, string message)
         {
             List<string> list = null;
@@ -157,7 +159,18 @@ namespace GSMS.DL
             Store_Announcement();
         }
 
-
+        public static List<string> WatchAnnouncement(int count)
+        {
+            List<string> list = null;
+            for (int i = 0; i < Announcement?.Count; i++)
+            {
+                if (i == count)
+                {
+                    list = Announcement[count];
+                }
+            }
+            return list;
+        }
 
         public static bool SentMessage(string loginName, string receiver, string msg)
         {
@@ -168,7 +181,7 @@ namespace GSMS.DL
             if (idx != -1)
             {
                 List<string> list = null;
-                int count = 0;
+                int count = 1;
                 foreach (var x in Message)
                 {
                     if (x[0] == receiver && x[1] == loginName)
@@ -179,16 +192,17 @@ namespace GSMS.DL
                     count++;
                 }
 
-                if (count >= Message.Count)
+                if (count > Message.Count)
                 {
                     list = new List<string>();
                     list.Add(receiver);
                     list.Add(loginName);
                 }
+                
+                string msg1 = "==>>" + msg;
+                list.Add(msg1);
 
-                list.Add(msg);
-
-                if (count >= Message.Count)
+                if (count > Message.Count)
                 {
                     Message.Add(list);
                 }
@@ -200,15 +214,17 @@ namespace GSMS.DL
         }
 
 
-        public static List<string> ReceivedMessage(string loginName)
+        public static List<string> ReceivedMessage(string loginName, int count)
         {
+            int idx = 0;
             List<string> list = null;
             foreach (var innerlist in Message1)
             {
-                if (innerlist[0] == loginName)
+                if (innerlist[0] == loginName && count == idx)
                 {
                     list = innerlist;
                 }
+                idx++;
             }
             return list;
         }

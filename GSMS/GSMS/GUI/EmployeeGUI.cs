@@ -125,6 +125,7 @@ namespace GSMS.GUI
 
         private void E_make_announcement_btn_Click(object sender, EventArgs e)
         {
+            HideAllMenus();
             Misc.Write_Message(menu_Display_Panel).IsBtnClick += Announcement_IsBtnClick;
         }
         private void Announcement_IsBtnClick(object sender, EventArgs e)
@@ -141,7 +142,8 @@ namespace GSMS.GUI
 
         private void E_watch_Announcements_btn_Click(object sender, EventArgs e)
         {
-            
+            HideAllMenus();
+            Misc.See_Announcements(menu_Display_Panel);
         }
 
 
@@ -171,7 +173,6 @@ namespace GSMS.GUI
             {
                 MessageBox.Show("No User Exists !!");
             }
-
         }
         private void Msg_IsBtnClick(object sender, EventArgs e)
         {
@@ -190,7 +191,7 @@ namespace GSMS.GUI
 
         private void E_Read_Message_btn_Click(object sender, EventArgs e)
         {
-            Misc.Read_Message(_user.GetName(), menu_Display_Panel);
+            Misc.Read_Message(_user.GetName(), menu_Display_Panel);            
         }
 
 
