@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThePrinceArcher Game", "ThePrinceArcher Game\ThePrinceArcher Game.csproj", "{A83E3261-48FF-4B9E-923C-3EBD6D595CF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A83E3261-48FF-4B9E-923C-3EBD6D595CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83E3261-48FF-4B9E-923C-3EBD6D595CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83E3261-48FF-4B9E-923C-3EBD6D595CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83E3261-48FF-4B9E-923C-3EBD6D595CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02A90B4C-4222-4E7F-9C03-C6417D0414EA}
+	EndGlobalSection
+EndGlobal
