@@ -110,5 +110,38 @@ namespace GSMS.GUI
             display_GV.DataSource = list.Select(c => new { c.ProductName, c.Price, c.Sale }).ToList();
         }
 
+
+
+        // Validating Function
+
+        private void search_Txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space);
+        }
+
+        private void search_Txt_KeyUp(object sender, KeyEventArgs e)
+        {
+            epError.SetError(search_Txt, string.Empty);
+            if (!string.IsNullOrEmpty(search_Txt.Text.Trim()))
+            {
+                epSuccess.SetError(search_Txt, "Valid");
+            }
+            else
+            {
+                epSuccess.SetError(search_Txt, string.Empty);
+            }
+        }
+
+        private void search_Txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(search_Txt.Text.Trim()))
+            {
+                epError.SetError(search_Txt, string.Empty);
+            }
+            else
+            {
+                epError.SetError(search_Txt, "Name is required.");
+            }
+        }
     }
 }

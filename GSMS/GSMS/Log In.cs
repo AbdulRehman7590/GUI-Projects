@@ -36,35 +36,38 @@ namespace GSMS
 
         private void signIn_btn_Click(object sender, EventArgs e)
         {
-            User loginUser = UserDL.SignIN(SignIn_User());
-
-            if (loginUser != null)
+            if (logIn_UserName_txt.Text != "" && logIn_Password_txt.Text != "")
             {
-                this.Close();
-                this.Hide();
+                User loginUser = UserDL.SignIN(SignIn_User());
 
-                if (loginUser is Admin)
+                if (loginUser != null)
                 {
-                    Admin person = (Admin)loginUser;
-                    Form nform = new AdminGUI(person);
-                    nform.ShowDialog();
+                    this.Close();
+                    this.Hide();
+
+                    if (loginUser is Admin)
+                    {
+                        Admin person = (Admin)loginUser;
+                        Form nform = new AdminGUI(person);
+                        nform.ShowDialog();
+                    }
+                    else if (loginUser is Employee)
+                    {
+                        Employee person = (Employee)loginUser;
+                        Form nform = new EmployeeGUI(person);
+                        nform.ShowDialog();
+                    }
+                    else if (loginUser is Customer)
+                    {
+                        Customer person = (Customer)loginUser;
+                        Form nform = new CustomerGUI(person);
+                        nform.ShowDialog();
+                    }
                 }
-                else if (loginUser is Employee)
+                else
                 {
-                    Employee person = (Employee)loginUser;
-                    Form nform = new EmployeeGUI(person);
-                    nform.ShowDialog();
+                    MessageBox.Show("No User Found");
                 }
-                else if (loginUser is Customer)
-                {
-                    Customer person = (Customer)loginUser;
-                    Form nform = new CustomerGUI(person);
-                    nform.ShowDialog();
-                }
-            }
-            else
-            {
-                MessageBox.Show("No User Found");
             }
         }
 
@@ -82,6 +85,9 @@ namespace GSMS
             return user = new User(name, pass);
         }
 
+
+        // Validating Functions
+
         private void logIn_UserName_txt_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space);
@@ -97,6 +103,44 @@ namespace GSMS
             else
             {
                 epSuccess.SetError(logIn_UserName_txt, string.Empty);
+            }
+        }
+
+        private void logIn_UserName_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(logIn_UserName_txt.Text.Trim()))
+            {
+                epError.SetError(logIn_UserName_txt, string.Empty);
+            }
+            else
+            {
+                epError.SetError(logIn_UserName_txt, "Name is required.");
+            }
+        }
+
+
+        private void logIn_Password_txt_KeyUp(object sender, KeyEventArgs e)
+        {
+            epError.SetError(logIn_Password_txt, string.Empty);
+            if (!string.IsNullOrEmpty(logIn_Password_txt.Text.Trim()))
+            {
+                epSuccess.SetError(logIn_Password_txt, "Valid");
+            }
+            else
+            {
+                epSuccess.SetError(logIn_Password_txt, string.Empty);
+            }
+        }
+
+        private void logIn_Password_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(logIn_Password_txt.Text.Trim()))
+            {
+                epError.SetError(logIn_Password_txt, string.Empty);
+            }
+            else
+            {
+                epError.SetError(logIn_Password_txt, "Name is required.");
             }
         }
 

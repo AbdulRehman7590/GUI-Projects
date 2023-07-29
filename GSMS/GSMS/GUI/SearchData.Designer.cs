@@ -28,19 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchData));
             this.search_Panel = new System.Windows.Forms.Panel();
             this.search_btn = new System.Windows.Forms.Button();
             this.search_Txt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.show_Panel = new System.Windows.Forms.Panel();
             this.display_GV = new System.Windows.Forms.DataGridView();
+            this.epError = new System.Windows.Forms.ErrorProvider(this.components);
+            this.epSuccess = new System.Windows.Forms.ErrorProvider(this.components);
             this.search_Panel.SuspendLayout();
             this.show_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.display_GV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epSuccess)).BeginInit();
             this.SuspendLayout();
             // 
             // search_Panel
             // 
+            this.search_Panel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.search_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.search_Panel.Controls.Add(this.search_btn);
             this.search_Panel.Controls.Add(this.search_Txt);
@@ -55,22 +62,29 @@
             // search_btn
             // 
             this.search_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.search_btn.Location = new System.Drawing.Point(613, 47);
+            this.search_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.search_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.search_btn.Location = new System.Drawing.Point(606, 41);
             this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(84, 29);
+            this.search_btn.Size = new System.Drawing.Size(91, 38);
             this.search_btn.TabIndex = 2;
             this.search_btn.Text = "Search";
-            this.search_btn.UseVisualStyleBackColor = true;
+            this.search_btn.UseVisualStyleBackColor = false;
             this.search_btn.Click += new System.EventHandler(this.search_btn_Click);
             // 
             // search_Txt
             // 
             this.search_Txt.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.search_Txt.Location = new System.Drawing.Point(297, 47);
+            this.search_Txt.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_Txt.Location = new System.Drawing.Point(261, 47);
             this.search_Txt.Margin = new System.Windows.Forms.Padding(5);
             this.search_Txt.Name = "search_Txt";
-            this.search_Txt.Size = new System.Drawing.Size(223, 24);
+            this.search_Txt.Size = new System.Drawing.Size(285, 27);
             this.search_Txt.TabIndex = 1;
+            this.search_Txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.search_Txt_KeyPress);
+            this.search_Txt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.search_Txt_KeyUp);
+            this.search_Txt.Validating += new System.ComponentModel.CancelEventHandler(this.search_Txt_Validating);
             // 
             // label1
             // 
@@ -88,6 +102,7 @@
             // show_Panel
             // 
             this.show_Panel.AutoScroll = true;
+            this.show_Panel.BackColor = System.Drawing.SystemColors.ControlLight;
             this.show_Panel.Controls.Add(this.display_GV);
             this.show_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.show_Panel.Location = new System.Drawing.Point(0, 111);
@@ -112,6 +127,15 @@
             this.display_GV.TabIndex = 0;
             this.display_GV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.display_CellDoubleClick);
             // 
+            // epError
+            // 
+            this.epError.ContainerControl = this;
+            // 
+            // epSuccess
+            // 
+            this.epSuccess.ContainerControl = this;
+            this.epSuccess.Icon = ((System.Drawing.Icon)(resources.GetObject("epSuccess.Icon")));
+            // 
             // SearchData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -127,6 +151,8 @@
             this.search_Panel.PerformLayout();
             this.show_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.display_GV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.epSuccess)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -139,5 +165,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button search_btn;
         private System.Windows.Forms.TextBox search_Txt;
+        private System.Windows.Forms.ErrorProvider epError;
+        private System.Windows.Forms.ErrorProvider epSuccess;
     }
 }

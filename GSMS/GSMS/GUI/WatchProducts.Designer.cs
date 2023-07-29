@@ -42,6 +42,7 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.Bill_TablePanel);
             this.panel1.Controls.Add(this.GV);
             this.panel1.Controls.Add(this.Back_btn);
@@ -106,13 +107,15 @@
             // Back_btn
             // 
             this.Back_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Back_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Back_btn.Location = new System.Drawing.Point(584, 276);
             this.Back_btn.Margin = new System.Windows.Forms.Padding(4);
             this.Back_btn.Name = "Back_btn";
             this.Back_btn.Size = new System.Drawing.Size(135, 48);
             this.Back_btn.TabIndex = 5;
             this.Back_btn.Text = "Back";
-            this.Back_btn.UseVisualStyleBackColor = true;
+            this.Back_btn.UseVisualStyleBackColor = false;
             this.Back_btn.Click += new System.EventHandler(this.Back_btn_Click);
             // 
             // WatchProducts

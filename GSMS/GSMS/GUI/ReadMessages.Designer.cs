@@ -40,6 +40,7 @@
             // 
             // display_Panel
             // 
+            this.display_Panel.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.display_Panel.Controls.Add(this.Back_btn);
             this.display_Panel.Controls.Add(this.msg_Display_GV);
             this.display_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -51,13 +52,14 @@
             // 
             // Back_btn
             // 
+            this.Back_btn.BackColor = System.Drawing.Color.DodgerBlue;
             this.Back_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Back_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Back_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Back_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Back_btn.FillColor = System.Drawing.Color.PaleTurquoise;
             this.Back_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
-            this.Back_btn.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.Back_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Back_btn.Location = new System.Drawing.Point(88, 318);
             this.Back_btn.Name = "Back_btn";
             this.Back_btn.Size = new System.Drawing.Size(112, 45);

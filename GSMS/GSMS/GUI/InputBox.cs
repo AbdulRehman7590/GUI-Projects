@@ -38,9 +38,12 @@ namespace GSMS.GUI
 
         private void Update_btn_Click(object sender, EventArgs e)
         {
-            Is_Click = true;
-            IsBtnClick?.Invoke(this, e);
-            this.Close();
+            if (update_Data_Txt.Text != "")
+            {
+                Is_Click = true;
+                IsBtnClick?.Invoke(this, e);
+                this.Close();
+            }
         }
 
         public void SetLabel(string line)
@@ -51,6 +54,40 @@ namespace GSMS.GUI
         public void SetButtonText(string line)
         {
             update_btn.Text = line;
+        }
+
+
+
+        // Validation Functions
+        
+        private void update_Data_Txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetterOrDigit(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space);
+        }
+
+        private void update_Data_Txt_KeyUp(object sender, KeyEventArgs e)
+        {
+            epError.SetError(update_Data_Txt, string.Empty);
+            if (!string.IsNullOrEmpty(update_Data_Txt.Text.Trim()))
+            {
+                epSuccess.SetError(update_Data_Txt, "Valid");
+            }
+            else
+            {
+                epSuccess.SetError(update_Data_Txt, string.Empty);
+            }
+        }
+
+        private void update_Data_Txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(update_Data_Txt.Text.Trim()))
+            {
+                epError.SetError(update_Data_Txt, string.Empty);
+            }
+            else
+            {
+                epError.SetError(update_Data_Txt, "Name is required.");
+            }
         }
     }
 }

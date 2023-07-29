@@ -208,5 +208,11 @@
   <ItemGroup>
     <None Include="Resources\cart-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color mall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_BG.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

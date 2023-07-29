@@ -51,28 +51,28 @@
             this.add_Products_btn = new System.Windows.Forms.Button();
             this.watch_Products_btn = new System.Windows.Forms.Button();
             this.products_Details_btn = new System.Windows.Forms.Button();
-            this.admin_Image_Panel = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.main_Panel = new System.Windows.Forms.Panel();
-            this.menu_Display_Panel = new System.Windows.Forms.Panel();
             this.userData_Panel = new System.Windows.Forms.Panel();
             this.user_PasswordChange_btn = new System.Windows.Forms.Button();
             this.userContact_lbl = new System.Windows.Forms.Label();
             this.userName_lbl = new System.Windows.Forms.Label();
             this.Title_Panel = new System.Windows.Forms.Panel();
-            this.Main_image = new System.Windows.Forms.PictureBox();
             this.MainScreen_Label = new System.Windows.Forms.Label();
+            this.menu_Display_Panel = new System.Windows.Forms.Panel();
+            this.Main_image = new System.Windows.Forms.PictureBox();
+            this.admin_Image_Panel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.admin_SideMenu_Panel.SuspendLayout();
             this.admin_SideMeu_Panel.SuspendLayout();
             this.announcement_Options_Panel.SuspendLayout();
             this.messenger_Options_Panel.SuspendLayout();
             this.manage_Employee_Options_Panel.SuspendLayout();
             this.admin_Products_Options_Panel.SuspendLayout();
-            this.admin_Image_Panel.SuspendLayout();
             this.main_Panel.SuspendLayout();
             this.userData_Panel.SuspendLayout();
             this.Title_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Main_image)).BeginInit();
+            this.admin_Image_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // admin_SideMenu_Panel
@@ -84,12 +84,13 @@
             this.admin_SideMenu_Panel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admin_SideMenu_Panel.Location = new System.Drawing.Point(0, 0);
             this.admin_SideMenu_Panel.Name = "admin_SideMenu_Panel";
-            this.admin_SideMenu_Panel.Size = new System.Drawing.Size(200, 532);
+            this.admin_SideMenu_Panel.Size = new System.Drawing.Size(200, 511);
             this.admin_SideMenu_Panel.TabIndex = 0;
             // 
             // admin_SideMeu_Panel
             // 
             this.admin_SideMeu_Panel.AutoScroll = true;
+            this.admin_SideMeu_Panel.BackColor = System.Drawing.Color.DarkCyan;
             this.admin_SideMeu_Panel.Controls.Add(this.logOut_btn);
             this.admin_SideMeu_Panel.Controls.Add(this.announcement_Options_Panel);
             this.admin_SideMeu_Panel.Controls.Add(this.announcement_btn);
@@ -103,18 +104,20 @@
             this.admin_SideMeu_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.admin_SideMeu_Panel.Location = new System.Drawing.Point(0, 150);
             this.admin_SideMeu_Panel.Name = "admin_SideMeu_Panel";
-            this.admin_SideMeu_Panel.Size = new System.Drawing.Size(200, 382);
+            this.admin_SideMeu_Panel.Size = new System.Drawing.Size(200, 361);
             this.admin_SideMeu_Panel.TabIndex = 2;
             // 
             // logOut_btn
             // 
+            this.logOut_btn.BackColor = System.Drawing.Color.DodgerBlue;
             this.logOut_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.logOut_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.logOut_btn.Location = new System.Drawing.Point(0, 496);
             this.logOut_btn.Name = "logOut_btn";
             this.logOut_btn.Size = new System.Drawing.Size(183, 39);
             this.logOut_btn.TabIndex = 17;
             this.logOut_btn.Text = "Log Out";
-            this.logOut_btn.UseVisualStyleBackColor = true;
+            this.logOut_btn.UseVisualStyleBackColor = false;
             this.logOut_btn.Click += new System.EventHandler(this.logOut_btn_Click);
             // 
             // announcement_Options_Panel
@@ -154,13 +157,15 @@
             // 
             // announcement_btn
             // 
+            this.announcement_btn.BackColor = System.Drawing.Color.DodgerBlue;
             this.announcement_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.announcement_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.announcement_btn.Location = new System.Drawing.Point(0, 397);
             this.announcement_btn.Name = "announcement_btn";
             this.announcement_btn.Size = new System.Drawing.Size(183, 39);
             this.announcement_btn.TabIndex = 16;
             this.announcement_btn.Text = "Announcements";
-            this.announcement_btn.UseVisualStyleBackColor = true;
+            this.announcement_btn.UseVisualStyleBackColor = false;
             this.announcement_btn.Click += new System.EventHandler(this.announcement_btn_Click);
             // 
             // messenger_Options_Panel
@@ -200,24 +205,28 @@
             // 
             // admin_Messenger_btn
             // 
+            this.admin_Messenger_btn.BackColor = System.Drawing.Color.DodgerBlue;
             this.admin_Messenger_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.admin_Messenger_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.admin_Messenger_btn.Location = new System.Drawing.Point(0, 298);
             this.admin_Messenger_btn.Name = "admin_Messenger_btn";
             this.admin_Messenger_btn.Size = new System.Drawing.Size(183, 39);
             this.admin_Messenger_btn.TabIndex = 14;
             this.admin_Messenger_btn.Text = "Messenger";
-            this.admin_Messenger_btn.UseVisualStyleBackColor = true;
+            this.admin_Messenger_btn.UseVisualStyleBackColor = false;
             this.admin_Messenger_btn.Click += new System.EventHandler(this.admin_Messenger_btn_Click);
             // 
             // customer_Traffic_btn
             // 
+            this.customer_Traffic_btn.BackColor = System.Drawing.Color.DodgerBlue;
             this.customer_Traffic_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.customer_Traffic_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.customer_Traffic_btn.Location = new System.Drawing.Point(0, 259);
             this.customer_Traffic_btn.Name = "customer_Traffic_btn";
             this.customer_Traffic_btn.Size = new System.Drawing.Size(183, 39);
             this.customer_Traffic_btn.TabIndex = 13;
             this.customer_Traffic_btn.Text = "Customer Traffic";
-            this.customer_Traffic_btn.UseVisualStyleBackColor = true;
+            this.customer_Traffic_btn.UseVisualStyleBackColor = false;
             this.customer_Traffic_btn.Click += new System.EventHandler(this.customer_Traffic_btn_Click);
             // 
             // manage_Employee_Options_Panel
@@ -244,13 +253,15 @@
             // 
             // employee_Manage_btn
             // 
+            this.employee_Manage_btn.BackColor = System.Drawing.Color.DodgerBlue;
             this.employee_Manage_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.employee_Manage_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.employee_Manage_btn.Location = new System.Drawing.Point(0, 190);
             this.employee_Manage_btn.Name = "employee_Manage_btn";
             this.employee_Manage_btn.Size = new System.Drawing.Size(183, 39);
             this.employee_Manage_btn.TabIndex = 5;
             this.employee_Manage_btn.Text = "Manage Employee";
-            this.employee_Manage_btn.UseVisualStyleBackColor = true;
+            this.employee_Manage_btn.UseVisualStyleBackColor = false;
             this.employee_Manage_btn.Click += new System.EventHandler(this.employee_Manage_btn_Click);
             // 
             // admin_Products_Options_Panel
@@ -329,18 +340,130 @@
             // 
             // products_Details_btn
             // 
+            this.products_Details_btn.BackColor = System.Drawing.Color.DodgerBlue;
             this.products_Details_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.products_Details_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.products_Details_btn.Location = new System.Drawing.Point(0, 0);
             this.products_Details_btn.Name = "products_Details_btn";
             this.products_Details_btn.Size = new System.Drawing.Size(183, 39);
             this.products_Details_btn.TabIndex = 3;
             this.products_Details_btn.Text = "Products Details";
-            this.products_Details_btn.UseVisualStyleBackColor = true;
+            this.products_Details_btn.UseVisualStyleBackColor = false;
             this.products_Details_btn.Click += new System.EventHandler(this.products_Details_btn_Click);
+            // 
+            // main_Panel
+            // 
+            this.main_Panel.AutoScroll = true;
+            this.main_Panel.Controls.Add(this.menu_Display_Panel);
+            this.main_Panel.Controls.Add(this.userData_Panel);
+            this.main_Panel.Controls.Add(this.Title_Panel);
+            this.main_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.main_Panel.Location = new System.Drawing.Point(200, 0);
+            this.main_Panel.Name = "main_Panel";
+            this.main_Panel.Size = new System.Drawing.Size(734, 511);
+            this.main_Panel.TabIndex = 0;
+            // 
+            // userData_Panel
+            // 
+            this.userData_Panel.BackColor = System.Drawing.Color.CadetBlue;
+            this.userData_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userData_Panel.Controls.Add(this.user_PasswordChange_btn);
+            this.userData_Panel.Controls.Add(this.userContact_lbl);
+            this.userData_Panel.Controls.Add(this.userName_lbl);
+            this.userData_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.userData_Panel.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.userData_Panel.Location = new System.Drawing.Point(0, 93);
+            this.userData_Panel.Name = "userData_Panel";
+            this.userData_Panel.Size = new System.Drawing.Size(734, 57);
+            this.userData_Panel.TabIndex = 1;
+            // 
+            // user_PasswordChange_btn
+            // 
+            this.user_PasswordChange_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.user_PasswordChange_btn.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.user_PasswordChange_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.user_PasswordChange_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.user_PasswordChange_btn.Location = new System.Drawing.Point(438, 9);
+            this.user_PasswordChange_btn.Name = "user_PasswordChange_btn";
+            this.user_PasswordChange_btn.Size = new System.Drawing.Size(135, 39);
+            this.user_PasswordChange_btn.TabIndex = 0;
+            this.user_PasswordChange_btn.Text = "Change Password";
+            this.user_PasswordChange_btn.UseVisualStyleBackColor = false;
+            this.user_PasswordChange_btn.Click += new System.EventHandler(this.user_PasswordChange_btn_Click);
+            // 
+            // userContact_lbl
+            // 
+            this.userContact_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userContact_lbl.AutoSize = true;
+            this.userContact_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userContact_lbl.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.userContact_lbl.Location = new System.Drawing.Point(285, 19);
+            this.userContact_lbl.Name = "userContact_lbl";
+            this.userContact_lbl.Size = new System.Drawing.Size(70, 19);
+            this.userContact_lbl.TabIndex = 0;
+            this.userContact_lbl.Text = "Contact :";
+            // 
+            // userName_lbl
+            // 
+            this.userName_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.userName_lbl.AutoSize = true;
+            this.userName_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName_lbl.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.userName_lbl.Location = new System.Drawing.Point(160, 19);
+            this.userName_lbl.Name = "userName_lbl";
+            this.userName_lbl.Size = new System.Drawing.Size(90, 19);
+            this.userName_lbl.TabIndex = 0;
+            this.userName_lbl.Text = "UserName :";
+            // 
+            // Title_Panel
+            // 
+            this.Title_Panel.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.Title_Panel.Controls.Add(this.Main_image);
+            this.Title_Panel.Controls.Add(this.MainScreen_Label);
+            this.Title_Panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Title_Panel.Location = new System.Drawing.Point(0, 0);
+            this.Title_Panel.Name = "Title_Panel";
+            this.Title_Panel.Size = new System.Drawing.Size(734, 93);
+            this.Title_Panel.TabIndex = 2;
+            // 
+            // MainScreen_Label
+            // 
+            this.MainScreen_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MainScreen_Label.AutoSize = true;
+            this.MainScreen_Label.Font = new System.Drawing.Font("Times New Roman", 30F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MainScreen_Label.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.MainScreen_Label.Location = new System.Drawing.Point(322, 22);
+            this.MainScreen_Label.Name = "MainScreen_Label";
+            this.MainScreen_Label.Size = new System.Drawing.Size(181, 46);
+            this.MainScreen_Label.TabIndex = 0;
+            this.MainScreen_Label.Text = "City Shop";
+            // 
+            // menu_Display_Panel
+            // 
+            this.menu_Display_Panel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.menu_Display_Panel.BackgroundImage = global::GSMS.Properties.Resources.bg_admin_removebg_preview;
+            this.menu_Display_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.menu_Display_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menu_Display_Panel.Location = new System.Drawing.Point(0, 150);
+            this.menu_Display_Panel.Name = "menu_Display_Panel";
+            this.menu_Display_Panel.Size = new System.Drawing.Size(734, 361);
+            this.menu_Display_Panel.TabIndex = 0;
+            // 
+            // Main_image
+            // 
+            this.Main_image.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Main_image.BackgroundImage = global::GSMS.Properties.Resources.mal__2__removebg_preview;
+            this.Main_image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Main_image.Location = new System.Drawing.Point(198, 12);
+            this.Main_image.Name = "Main_image";
+            this.Main_image.Size = new System.Drawing.Size(118, 68);
+            this.Main_image.TabIndex = 3;
+            this.Main_image.TabStop = false;
             // 
             // admin_Image_Panel
             // 
-            this.admin_Image_Panel.BackColor = System.Drawing.Color.Silver;
+            this.admin_Image_Panel.BackColor = System.Drawing.Color.LightSlateGray;
             this.admin_Image_Panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("admin_Image_Panel.BackgroundImage")));
             this.admin_Image_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.admin_Image_Panel.Controls.Add(this.panel2);
@@ -357,120 +480,16 @@
             this.panel2.Size = new System.Drawing.Size(462, 100);
             this.panel2.TabIndex = 1;
             // 
-            // main_Panel
-            // 
-            this.main_Panel.AutoScroll = true;
-            this.main_Panel.Controls.Add(this.menu_Display_Panel);
-            this.main_Panel.Controls.Add(this.userData_Panel);
-            this.main_Panel.Controls.Add(this.Title_Panel);
-            this.main_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.main_Panel.Location = new System.Drawing.Point(200, 0);
-            this.main_Panel.Name = "main_Panel";
-            this.main_Panel.Size = new System.Drawing.Size(697, 532);
-            this.main_Panel.TabIndex = 0;
-            // 
-            // menu_Display_Panel
-            // 
-            this.menu_Display_Panel.BackgroundImage = global::GSMS.Properties.Resources.bg_admin_removebg_preview;
-            this.menu_Display_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.menu_Display_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.menu_Display_Panel.Location = new System.Drawing.Point(0, 150);
-            this.menu_Display_Panel.Name = "menu_Display_Panel";
-            this.menu_Display_Panel.Size = new System.Drawing.Size(697, 382);
-            this.menu_Display_Panel.TabIndex = 0;
-            // 
-            // userData_Panel
-            // 
-            this.userData_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.userData_Panel.Controls.Add(this.user_PasswordChange_btn);
-            this.userData_Panel.Controls.Add(this.userContact_lbl);
-            this.userData_Panel.Controls.Add(this.userName_lbl);
-            this.userData_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.userData_Panel.Location = new System.Drawing.Point(0, 93);
-            this.userData_Panel.Name = "userData_Panel";
-            this.userData_Panel.Size = new System.Drawing.Size(697, 57);
-            this.userData_Panel.TabIndex = 1;
-            // 
-            // user_PasswordChange_btn
-            // 
-            this.user_PasswordChange_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.user_PasswordChange_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_PasswordChange_btn.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.user_PasswordChange_btn.Location = new System.Drawing.Point(419, 9);
-            this.user_PasswordChange_btn.Name = "user_PasswordChange_btn";
-            this.user_PasswordChange_btn.Size = new System.Drawing.Size(135, 39);
-            this.user_PasswordChange_btn.TabIndex = 0;
-            this.user_PasswordChange_btn.Text = "Change Password";
-            this.user_PasswordChange_btn.UseVisualStyleBackColor = true;
-            this.user_PasswordChange_btn.Click += new System.EventHandler(this.user_PasswordChange_btn_Click);
-            // 
-            // userContact_lbl
-            // 
-            this.userContact_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userContact_lbl.AutoSize = true;
-            this.userContact_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userContact_lbl.ForeColor = System.Drawing.Color.Purple;
-            this.userContact_lbl.Location = new System.Drawing.Point(266, 19);
-            this.userContact_lbl.Name = "userContact_lbl";
-            this.userContact_lbl.Size = new System.Drawing.Size(70, 19);
-            this.userContact_lbl.TabIndex = 0;
-            this.userContact_lbl.Text = "Contact :";
-            // 
-            // userName_lbl
-            // 
-            this.userName_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userName_lbl.AutoSize = true;
-            this.userName_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName_lbl.ForeColor = System.Drawing.Color.Purple;
-            this.userName_lbl.Location = new System.Drawing.Point(141, 19);
-            this.userName_lbl.Name = "userName_lbl";
-            this.userName_lbl.Size = new System.Drawing.Size(90, 19);
-            this.userName_lbl.TabIndex = 0;
-            this.userName_lbl.Text = "UserName :";
-            // 
-            // Title_Panel
-            // 
-            this.Title_Panel.Controls.Add(this.Main_image);
-            this.Title_Panel.Controls.Add(this.MainScreen_Label);
-            this.Title_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Title_Panel.Location = new System.Drawing.Point(0, 0);
-            this.Title_Panel.Name = "Title_Panel";
-            this.Title_Panel.Size = new System.Drawing.Size(697, 93);
-            this.Title_Panel.TabIndex = 2;
-            // 
-            // Main_image
-            // 
-            this.Main_image.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Main_image.BackgroundImage = global::GSMS.Properties.Resources.mal__2__removebg_preview;
-            this.Main_image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Main_image.Location = new System.Drawing.Point(179, 12);
-            this.Main_image.Name = "Main_image";
-            this.Main_image.Size = new System.Drawing.Size(118, 68);
-            this.Main_image.TabIndex = 3;
-            this.Main_image.TabStop = false;
-            // 
-            // MainScreen_Label
-            // 
-            this.MainScreen_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.MainScreen_Label.AutoSize = true;
-            this.MainScreen_Label.Font = new System.Drawing.Font("Times New Roman", 30F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainScreen_Label.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.MainScreen_Label.Location = new System.Drawing.Point(303, 22);
-            this.MainScreen_Label.Name = "MainScreen_Label";
-            this.MainScreen_Label.Size = new System.Drawing.Size(181, 46);
-            this.MainScreen_Label.TabIndex = 0;
-            this.MainScreen_Label.Text = "City Shop";
-            // 
             // AdminGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 532);
+            this.ClientSize = new System.Drawing.Size(934, 511);
             this.Controls.Add(this.main_Panel);
             this.Controls.Add(this.admin_SideMenu_Panel);
             this.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(950, 550);
             this.Name = "AdminGUI";
             this.Text = "City Shop";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminGUI_FormClosed);
@@ -480,13 +499,13 @@
             this.messenger_Options_Panel.ResumeLayout(false);
             this.manage_Employee_Options_Panel.ResumeLayout(false);
             this.admin_Products_Options_Panel.ResumeLayout(false);
-            this.admin_Image_Panel.ResumeLayout(false);
             this.main_Panel.ResumeLayout(false);
             this.userData_Panel.ResumeLayout(false);
             this.userData_Panel.PerformLayout();
             this.Title_Panel.ResumeLayout(false);
             this.Title_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Main_image)).EndInit();
+            this.admin_Image_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

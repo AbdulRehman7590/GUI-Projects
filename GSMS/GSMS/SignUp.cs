@@ -27,27 +27,34 @@ namespace GSMS
 
         private void create_Account_btn_Click(object sender, EventArgs e)
         {
-            if (UserDL.CheckAdmin())
+            if (signUp_userName_txt.Text != "" && signUp_Password_txt.Text != "" && signUp_Contact_txt.Text != "")
             {
-                if (Create_Account())
+                if (UserDL.CheckAdmin())
                 {
-                    MessageBox.Show("Account Created Successfully !!!");
+                    if (Create_Account())
+                    {
+                        MessageBox.Show("Account Created Successfully !!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("User Already Exists");
+                    }
+                }
+                else if (Create_Account())
+                {
+                    InputBox update = new InputBox();
+                    update.SetLabel("Enter the Sign-Up Pin:");
+                    update.ShowDialog();
+
+                    if (((InputBox)sender).data != "")
+                    {
+                        update.IsBtnClick += Form_IsBtnClick;
+                    }
                 }
                 else
                 {
                     MessageBox.Show("User Already Exists");
                 }
-            }
-            else if (Create_Account())
-            {
-                InputBox update = new InputBox();
-                update.SetLabel("Enter the Sign-Up Pin:");
-                update.ShowDialog();
-                update.IsBtnClick += Form_IsBtnClick;
-            }
-            else
-            {
-                MessageBox.Show("User Already Exists");
             }
         }
 
@@ -115,14 +122,97 @@ namespace GSMS
             this.Close();
         }
 
+
+        // Validating Functions
+        
+        // UserName
         private void signUp_userName_txt_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space);
         }
 
+        private void signUp_userName_txt_KeyUp(object sender, KeyEventArgs e)
+        {
+            epError.SetError(signUp_userName_txt, string.Empty);
+            if (!string.IsNullOrEmpty(signUp_userName_txt.Text.Trim()))
+            {
+                epSuccess.SetError(signUp_userName_txt, "Valid");
+            }
+            else
+            {
+                epSuccess.SetError(signUp_userName_txt, string.Empty);
+            }
+        }
+
+        private void signUp_userName_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(signUp_userName_txt.Text.Trim()))
+            {
+                epError.SetError(signUp_userName_txt, string.Empty);
+            }
+            else
+            {
+                epError.SetError(signUp_userName_txt, "Name is required.");
+            }
+        }
+
+
+        // Password
+        private void signUp_Password_txt_KeyUp(object sender, KeyEventArgs e)
+        {
+            epError.SetError(signUp_Password_txt, string.Empty);
+            if (!string.IsNullOrEmpty(signUp_Password_txt.Text.Trim()))
+            {
+                epSuccess.SetError(signUp_Password_txt, "Valid");
+            }
+            else
+            {
+                epSuccess.SetError(signUp_Password_txt, string.Empty);
+            }
+        }
+
+        private void signUp_Password_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(signUp_Password_txt.Text.Trim()))
+            {
+                epError.SetError(signUp_Password_txt, string.Empty);
+            }
+            else
+            {
+                epError.SetError(signUp_Password_txt, "Name is required.");
+            }
+        }
+
+
+        // Contact
         private void signUp_Contact_txt_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = !(char.IsNumber(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space);
+        }
+
+        private void signUp_Contact_txt_KeyUp(object sender, KeyEventArgs e)
+        {
+            epError.SetError(signUp_Contact_txt, string.Empty);
+            if (!string.IsNullOrEmpty(signUp_Contact_txt.Text.Trim()))
+            {
+                epSuccess.SetError(signUp_Contact_txt, "Valid");
+            }
+            else
+            {
+                epSuccess.SetError(signUp_Contact_txt, string.Empty);
+            }
+        }
+
+        private void signUp_Contact_txt_Validating(object sender, CancelEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(signUp_Contact_txt.Text.Trim()))
+            {
+                epError.SetError(signUp_Contact_txt, string.Empty);
+            }
+            else
+            {
+                epError.SetError(signUp_Contact_txt, "Name is required.");
+            }
         }
     }
 }
