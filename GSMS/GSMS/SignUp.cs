@@ -64,7 +64,7 @@ namespace GSMS
             {
                 string pin = ((InputBox)sender).data;
 
-                if (pin != null && pin.Length == 5)
+                if (pin != "" && pin.Length == 5)
                 {
                     UserDL.SetPin(pin);
 
@@ -78,7 +78,7 @@ namespace GSMS
         {
             bool result = false;
             string userName = signUp_userName_txt.Text;
-            if (UserDL.IsUserExists(userName) != -1)
+            if (userName != "" && UserDL.IsUserExists(userName) != -1)
             {
                 result = false;
             }
@@ -97,13 +97,13 @@ namespace GSMS
                     Employee info = new Employee(UserType.Employee, userName, password, contact);
                     UserDL.AddinUserList(info);
                 }
-                else if (_userType == UserType.Employee)
+                else if (_userType == UserType.Customer)
                 {
                     Customer info = new Customer(UserType.Customer, userName, password, contact);
                     UserDL.AddinUserList(info);
                 }
-                result = true;
                 UserDL.StoreUsersData();
+                result = true;
             }
             return result;
         }
@@ -117,6 +117,7 @@ namespace GSMS
 
         private void Back_btn_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Main_Menu form = new Main_Menu();
             form.Show();
         }
@@ -214,5 +215,9 @@ namespace GSMS
             }
         }
 
+        private void SignUp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

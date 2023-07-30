@@ -102,6 +102,7 @@ namespace GSMS.GUI
                 UserDL.StoreUsersData();
 
                 MessageBox.Show("User Deleted !!!");
+                GV.Refresh();
             }
         }
 
@@ -120,6 +121,7 @@ namespace GSMS.GUI
             {
                 EmployeeDL.UpdateTheListData(e.RowIndex);
                 MessageBox.Show("Order is fulfilled !!!");
+                GV.Refresh();
             }
         }
 

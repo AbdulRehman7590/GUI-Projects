@@ -235,7 +235,7 @@ namespace GSMS.DL
         public static void StoreUsersData()
         {
             StreamWriter myFile = new StreamWriter("UserData.txt");
-            foreach (var x in LoginInfo1)
+            foreach (var x in LoginInfo)
             {
                 myFile.WriteLine(x.GetRole() + "," + x.GetName() + "," + x.GetPass() + "," + x.GetContact());
             }

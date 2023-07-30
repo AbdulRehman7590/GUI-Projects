@@ -77,8 +77,8 @@ namespace GSMS
 
         private void OpenSignUpForm(UserType user)
         {
-            this.Hide();
             Form nform = new SignUp(user);
+            this.Hide();
             nform.ShowDialog();
         }
 
