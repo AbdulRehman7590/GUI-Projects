@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageForm));
             this.pause_Panel = new System.Windows.Forms.Panel();
+            this.continue_Btn = new System.Windows.Forms.Button();
             this.return_Btn = new System.Windows.Forms.Button();
             this.showImage_PB = new System.Windows.Forms.PictureBox();
-            this.continue_Btn = new System.Windows.Forms.Button();
             this.pause_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showImage_PB)).BeginInit();
             this.SuspendLayout();
             // 
             // pause_Panel
             // 
-            this.pause_Panel.BackColor = System.Drawing.Color.LightBlue;
+            this.pause_Panel.BackColor = System.Drawing.Color.Silver;
             this.pause_Panel.Controls.Add(this.continue_Btn);
             this.pause_Panel.Controls.Add(this.return_Btn);
             this.pause_Panel.Controls.Add(this.showImage_PB);
@@ -48,6 +48,19 @@
             this.pause_Panel.Name = "pause_Panel";
             this.pause_Panel.Size = new System.Drawing.Size(584, 261);
             this.pause_Panel.TabIndex = 0;
+            // 
+            // continue_Btn
+            // 
+            this.continue_Btn.BackColor = System.Drawing.Color.CadetBlue;
+            this.continue_Btn.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.continue_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.continue_Btn.Location = new System.Drawing.Point(95, 192);
+            this.continue_Btn.Name = "continue_Btn";
+            this.continue_Btn.Size = new System.Drawing.Size(148, 43);
+            this.continue_Btn.TabIndex = 1;
+            this.continue_Btn.Text = "Continue";
+            this.continue_Btn.UseVisualStyleBackColor = false;
+            this.continue_Btn.Click += new System.EventHandler(this.continue_Btn_Click);
             // 
             // return_Btn
             // 
@@ -72,19 +85,6 @@
             this.showImage_PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.showImage_PB.TabIndex = 0;
             this.showImage_PB.TabStop = false;
-            // 
-            // continue_Btn
-            // 
-            this.continue_Btn.BackColor = System.Drawing.Color.CadetBlue;
-            this.continue_Btn.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continue_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.continue_Btn.Location = new System.Drawing.Point(95, 192);
-            this.continue_Btn.Name = "continue_Btn";
-            this.continue_Btn.Size = new System.Drawing.Size(148, 43);
-            this.continue_Btn.TabIndex = 1;
-            this.continue_Btn.Text = "Continue";
-            this.continue_Btn.UseVisualStyleBackColor = false;
-            this.continue_Btn.Click += new System.EventHandler(this.continue_Btn_Click);
             // 
             // MessageForm
             // 

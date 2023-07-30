@@ -119,7 +119,6 @@ namespace GSMS
         {
             Main_Menu form = new Main_Menu();
             form.Show();
-            this.Close();
         }
 
 
@@ -214,5 +213,6 @@ namespace GSMS
                 epError.SetError(signUp_Contact_txt, "Name is required.");
             }
         }
+
     }
 }

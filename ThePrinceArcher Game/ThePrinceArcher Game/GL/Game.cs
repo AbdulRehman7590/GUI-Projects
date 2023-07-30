@@ -19,7 +19,6 @@ namespace ThePrinceArcher_Game.GL
         List<Fire> prince_Fires;
         List<Fire> enemy_Fires;
 
-        public Enemy Villian { get => enemy; set => enemy = value; }
         public GameGrid Grid { get => grid; set => grid = value; }
         public List<Fire> HeroFires { get => prince_Fires; set => prince_Fires = value; }
         public List<Fire> EnemyFires { get => enemy_Fires; set => enemy_Fires = value; }
@@ -28,7 +27,7 @@ namespace ThePrinceArcher_Game.GL
         public Game(Panel panel)
         {
             this.game_Panel = panel;
-            Grid = new GameGrid(13, 35);
+            Grid = new GameGrid(13, 37);
             prince = new Prince(ThePrinceArcher_Game.Properties.Resources.archer, Grid.GetCell(5, 1));
             prince_Fires = new List<Fire>();
             enemy_Fires = new List<Fire>();
@@ -37,7 +36,7 @@ namespace ThePrinceArcher_Game.GL
 
         public void EnemyPresence()
         {
-            enemy = new Enemy(ThePrinceArcher_Game.Properties.Resources.enemy, Grid.GetCell(5, 25));
+            enemy = new Enemy(ThePrinceArcher_Game.Properties.Resources.enemy, Grid.GetCell(5, 25));           
         }
 
         public void RemoveHeroFire()
@@ -137,7 +136,7 @@ namespace ThePrinceArcher_Game.GL
 
         public static GameObject GetBlankGameObject()
         {
-            return new GameObject(GameObjectType.NONE, ThePrinceArcher_Game.Properties.Resources.simplebox);
+            return new GameObject(GameObjectType.NONE, null);
         }
 
         public GameObject GetWallGameObject()
@@ -157,7 +156,7 @@ namespace ThePrinceArcher_Game.GL
 
         public static Image GetGameObjectImage(char displayCharacter)
         {
-            Image img = ThePrinceArcher_Game.Properties.Resources.simplebox;
+            Image img = null;
             if (displayCharacter == '#')
             {
                 img = ThePrinceArcher_Game.Properties.Resources.bricks;
@@ -193,7 +192,7 @@ namespace ThePrinceArcher_Game.GL
         int fruits = 0;
         public void GenerateFruit(int points)
         {
-            if(prince.Health <= 30 && points == 25 && fruits < 2)
+            if(prince.Health <= 30 && points >= 25 && fruits < 2)
             {
                 Random rnd = new Random();
                 int x, y;
@@ -229,6 +228,18 @@ namespace ThePrinceArcher_Game.GL
         }
 
         
+        public void DecreaseBombNFruit(Fire f)
+        {
+            if(f.CurrentCell.CurrentGameObject.GameObjectType == GameObjectType.REWARD)
+            {
+                fruits--;
+            }
+            if(f.CurrentCell.CurrentGameObject.GameObjectType == GameObjectType.BOMB)
+            {
+                bombs--;
+            }
+        }
+
         public bool WinGame()
         {
             bool flag = false;
@@ -264,8 +275,8 @@ namespace ThePrinceArcher_Game.GL
 
         public void OpenGate()
         {
-            GameCell cell1 = GetCell(5, 30);
-            GameCell cell2 = GetCell(6, 30);
+            GameCell cell1 = GetCell(5, 32);
+            GameCell cell2 = GetCell(6, 32);
 
             cell1.SetGameObject(GetBlankGameObject());
             cell2.SetGameObject(GetBlankGameObject());

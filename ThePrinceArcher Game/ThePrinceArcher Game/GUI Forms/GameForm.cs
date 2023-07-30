@@ -18,8 +18,6 @@ namespace ThePrinceArcher_Game.GUI_Forms
     {
         public event EventHandler IsExitClick;
 
-        public bool isClick { get => isExit; }
-        bool isExit = false;
 
         Game game;
         GameCollisionDetector collider;
@@ -41,15 +39,32 @@ namespace ThePrinceArcher_Game.GUI_Forms
         {
             ShowScore();
             ShowArrows();
+            ShowHerHealth();
             MoveHeroFire();
             MoveEnemyFire();
             game.RemoveHeroFire();
             game.RemoveEnemyFire();
             game.GenerateFruit(points);
             TakeKeyInput();
+            GeneralFunction();
+        }
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            return true;
+        }
+        
+        private void ResumeFrm_IsBtnClick(object sender, EventArgs e)
+        {
+            IsExitClick?.Invoke(this, e);
+        }
+        
+        
+        private void GeneralFunction()
+        {
             if (enemyPresence)
             {
+                ShowEnemyHealth();
                 MoveEnemy();
                 game.CreateBombs();
             }
@@ -62,19 +77,30 @@ namespace ThePrinceArcher_Game.GUI_Forms
                 frm.IsReturnBtnClick += ResumeFrm_IsBtnClick;
                 frm.ShowDialog();
             }
+
+            if (rightSteps == 2)
+            {
+                AddRightStep();
+                game.WallRemove();
+            }
+
+            if (rightSteps == 10)
+            {
+                AddRightStep();
+                game.PrintWall();
+                enemyPresence = true;
+                game.EnemyPresence();
+            }
+
+            if (enemyDead)
+            {
+                enemyPresence = false;
+                game.OpenGate();
+            }
+
         }
         
-        private void ResumeFrm_IsBtnClick(object sender, EventArgs e)
-        {
-            isExit = true;
-            IsExitClick?.Invoke(this, e);
-        }
 
-
-        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
-        {
-            return true;
-        }
 
         private void TakeKeyInput()
         {
@@ -122,7 +148,7 @@ namespace ThePrinceArcher_Game.GUI_Forms
                 frm.ShowDialog();
             }
 
-            HeroFunctions(prince);
+            prince.Reload(ref loadedArrow);
             game.NextCellFunctions(potentialNewCell, collider, ref points);
 
             GameCell currentCell = prince.CurrentCell;
@@ -133,9 +159,8 @@ namespace ThePrinceArcher_Game.GUI_Forms
         private void ResumeFrm_IsContinueBtnClick(object sender, EventArgs e)
         {
             gameLoop.Start();
-        }
-
-
+        }        
+        
         public void AddRightStep()
         {
             rightSteps++;
@@ -145,31 +170,7 @@ namespace ThePrinceArcher_Game.GUI_Forms
             }
         }
 
-        private void HeroFunctions(Prince prince)
-        {
-            prince.Reload(ref loadedArrow);
 
-            if (rightSteps == 2)
-            {
-                AddRightStep();
-                game.WallRemove();
-            }
-
-            if (rightSteps == 10)
-            {
-                AddRightStep();
-                game.PrintWall();
-                enemyPresence = true;
-                game.EnemyPresence();
-            }
-
-            if (enemyDead)
-            {
-                enemyPresence = false;
-                game.OpenGate();
-            }
-
-        }
 
         private void ShowScore()
         {
@@ -183,6 +184,39 @@ namespace ThePrinceArcher_Game.GUI_Forms
 
 
 
+        private void ShowHerHealth()
+        {
+            if (0 < game.GetPrinceHealth())
+            {
+                prince_Health_Bar.Value = game.GetPrinceHealth();
+            }
+            else if (0 == game.GetPrinceHealth())
+            {
+                prince_Health_Bar.Value = game.GetPrinceHealth();
+
+                gameLoop.Stop();
+                MessageForm frm = new MessageForm(ThePrinceArcher_Game.Properties.Resources.game_lose);
+                frm.HideContinueBtn();
+                frm.IsReturnBtnClick += ResumeFrm_IsBtnClick;
+                frm.ShowDialog();
+            }
+        }
+
+        private void ShowEnemyHealth()
+        {
+            if (0 < game.GetEnemyHealth())
+            {
+                enemy_Health_Bar.Value = game.GetEnemyHealth();
+            }
+            else if (0 == game.GetEnemyHealth())
+            {
+                enemy_Health_Bar.Value = game.GetEnemyHealth();
+
+                enemyDead = true;
+            }
+        }
+
+
 
         private void MoveHeroFire()
         {
@@ -192,16 +226,7 @@ namespace ThePrinceArcher_Game.GUI_Forms
                 {
                     points = points + 5;
                     game.DecreaseEnemyHealth();
-                    if (0 < game.GetEnemyHealth())
-                    {
-                        enemy_Health_Bar.Value = game.GetEnemyHealth();
-                    }
-                    else if (0 == game.GetEnemyHealth())
-                    {
-                        enemy_Health_Bar.Value = game.GetEnemyHealth();
-
-                        enemyDead = false;
-                    }
+                    game.DecreaseBombNFruit(f);
                 }
                 f.Move(f.NextCell());
             }
@@ -214,20 +239,7 @@ namespace ThePrinceArcher_Game.GUI_Forms
                 if (collider.FireWithPrince(f))
                 {
                     game.DecreaseHeroHealth();
-                    if (0 < game.GetPrinceHealth())
-                    {
-                        prince_Health_Bar.Value = game.GetPrinceHealth();
-                    }
-                    else if (0 == game.GetPrinceHealth())
-                    {
-                        prince_Health_Bar.Value = game.GetPrinceHealth();
-
-                        gameLoop.Stop();
-                        MessageForm frm = new MessageForm(ThePrinceArcher_Game.Properties.Resources.game_lose);
-                        frm.HideContinueBtn();
-                        frm.IsReturnBtnClick += ResumeFrm_IsBtnClick;
-                        frm.ShowDialog();
-                    }
+                    game.DecreaseBombNFruit(f);
                 }
 
                 f.Move(f.NextCell());
@@ -244,7 +256,7 @@ namespace ThePrinceArcher_Game.GUI_Forms
             GameCell nextCell;
 
             Random rnd = new Random();
-            int num = rnd.Next(2, 5);
+            int num = rnd.Next(2, 4);
 
             if (num == 2)
             {
@@ -257,7 +269,7 @@ namespace ThePrinceArcher_Game.GUI_Forms
                 }
             }
 
-            else if (num == 4)
+            else if (num == 3)
             {
                 nextCell = enemy.CurrentCell.NextCell(GameDirection.DOWN);
                 if (nextCell != potentialNewCell)

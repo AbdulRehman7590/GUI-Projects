@@ -60,12 +60,12 @@
             // update_btn
             // 
             this.update_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.update_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.update_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.update_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.update_btn.Location = new System.Drawing.Point(407, 199);
+            this.update_btn.Location = new System.Drawing.Point(407, 192);
             this.update_btn.Name = "update_btn";
-            this.update_btn.Size = new System.Drawing.Size(90, 36);
+            this.update_btn.Size = new System.Drawing.Size(90, 43);
             this.update_btn.TabIndex = 2;
             this.update_btn.Text = "Update";
             this.update_btn.UseVisualStyleBackColor = false;
@@ -74,12 +74,12 @@
             // Back_btn
             // 
             this.Back_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Back_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.Back_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Back_btn.Location = new System.Drawing.Point(121, 199);
+            this.Back_btn.Location = new System.Drawing.Point(121, 192);
             this.Back_btn.Name = "Back_btn";
-            this.Back_btn.Size = new System.Drawing.Size(90, 36);
+            this.Back_btn.Size = new System.Drawing.Size(90, 43);
             this.Back_btn.TabIndex = 3;
             this.Back_btn.Text = "Back";
             this.Back_btn.UseVisualStyleBackColor = false;

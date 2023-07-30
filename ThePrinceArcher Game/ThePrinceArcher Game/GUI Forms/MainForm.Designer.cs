@@ -37,16 +37,17 @@
             this.main_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.main_Panel.Location = new System.Drawing.Point(0, 0);
             this.main_Panel.Name = "main_Panel";
-            this.main_Panel.Size = new System.Drawing.Size(800, 450);
+            this.main_Panel.Size = new System.Drawing.Size(1234, 661);
             this.main_Panel.TabIndex = 0;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1234, 661);
             this.Controls.Add(this.main_Panel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(1250, 700);
             this.Name = "MainForm";
             this.Text = "The Prince Archer";
             this.ResumeLayout(false);

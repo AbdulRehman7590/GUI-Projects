@@ -59,7 +59,7 @@ namespace GSMS
             // 
             // customer_SignUp_btn
             // 
-            this.customer_SignUp_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.customer_SignUp_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.customer_SignUp_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.customer_SignUp_btn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.customer_SignUp_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -73,7 +73,7 @@ namespace GSMS
             // 
             // employee_SignUp_btn
             // 
-            this.employee_SignUp_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.employee_SignUp_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.employee_SignUp_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.employee_SignUp_btn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.employee_SignUp_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -87,7 +87,7 @@ namespace GSMS
             // 
             // admin_SignUp_btn
             // 
-            this.admin_SignUp_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.admin_SignUp_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.admin_SignUp_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.admin_SignUp_btn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.admin_SignUp_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -101,7 +101,10 @@ namespace GSMS
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.logIn_btn);
             this.panel1.Controls.Add(this.signUp_btn);
             this.panel1.Controls.Add(this.lbl_msg4);
@@ -117,7 +120,7 @@ namespace GSMS
             // logIn_btn
             // 
             this.logIn_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.logIn_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.logIn_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.logIn_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
             this.logIn_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.logIn_btn.Location = new System.Drawing.Point(86, 252);
@@ -131,7 +134,7 @@ namespace GSMS
             // signUp_btn
             // 
             this.signUp_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.signUp_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.signUp_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.signUp_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold);
             this.signUp_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.signUp_btn.Location = new System.Drawing.Point(346, 252);
@@ -147,7 +150,7 @@ namespace GSMS
             // 
             this.lbl_msg4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_msg4.AutoSize = true;
-            this.lbl_msg4.BackColor = System.Drawing.Color.DarkCyan;
+            this.lbl_msg4.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lbl_msg4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_msg4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_msg4.Location = new System.Drawing.Point(70, 202);
@@ -161,7 +164,7 @@ namespace GSMS
             // 
             this.lbl_msg3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_msg3.AutoSize = true;
-            this.lbl_msg3.BackColor = System.Drawing.Color.DarkCyan;
+            this.lbl_msg3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lbl_msg3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_msg3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_msg3.Location = new System.Drawing.Point(118, 170);
@@ -175,7 +178,7 @@ namespace GSMS
             // 
             this.lbl_msg2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_msg2.AutoSize = true;
-            this.lbl_msg2.BackColor = System.Drawing.Color.DarkCyan;
+            this.lbl_msg2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lbl_msg2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_msg2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_msg2.Location = new System.Drawing.Point(118, 137);
@@ -189,7 +192,7 @@ namespace GSMS
             // 
             this.lbl_msg1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbl_msg1.AutoSize = true;
-            this.lbl_msg1.BackColor = System.Drawing.Color.DarkCyan;
+            this.lbl_msg1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.lbl_msg1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_msg1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_msg1.Location = new System.Drawing.Point(72, 104);
@@ -203,11 +206,11 @@ namespace GSMS
             // 
             this.MainScreen_Label.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.MainScreen_Label.AutoSize = true;
-            this.MainScreen_Label.BackColor = System.Drawing.Color.DarkCyan;
+            this.MainScreen_Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.MainScreen_Label.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.MainScreen_Label.Font = new System.Drawing.Font("Times New Roman", 30F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MainScreen_Label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.MainScreen_Label.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.MainScreen_Label.Location = new System.Drawing.Point(166, 39);
             this.MainScreen_Label.Name = "MainScreen_Label";
             this.MainScreen_Label.Size = new System.Drawing.Size(183, 48);
@@ -218,8 +221,8 @@ namespace GSMS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.BackgroundImage = global::GSMS.Properties.Resources.main_BG;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackgroundImage = global::GSMS.Properties.Resources.main_BG1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);

@@ -14,6 +14,7 @@ namespace ThePrinceArcher_Game.GUI_Forms
     {
         public MainForm()
         {
+            this.WindowState = FormWindowState.Maximized;
             InitializeComponent();
             RunForm();
         }
@@ -23,10 +24,12 @@ namespace ThePrinceArcher_Game.GUI_Forms
             MenuForm form = new MenuForm();
             form.StartBtnClick += MenuForm_StartBtnClick;
             form.InstructionsBtnClick += MenuForm_InstructionsBtnClick;
+            form.StoryBtnClick += MenuForm_StoryBtnClick;
             form.ExitBtnClick += MenuForm_ExitBtnClick;
             Set_Form(form);
         }
 
+        
 
         private void MenuForm_StartBtnClick(object sender, EventArgs e)
         {
@@ -34,26 +37,26 @@ namespace ThePrinceArcher_Game.GUI_Forms
             form.IsExitClick += GameForm_IsExitClick;
             Set_Form(form);
         }
+
+
         private void GameForm_IsExitClick(object sender, EventArgs e)
         {
-            if (((GameForm)sender).isClick)
-            {
-                RunForm();
-            }
+            RunForm();
         }
 
         private void MenuForm_InstructionsBtnClick(object sender, EventArgs e)
         {
             InstructionsForm form = new InstructionsForm();
-            form.IsBackBtnClick += InstructionsForm_IsBackBtnClick;
+            form.IsBackBtnClick += GameForm_IsExitClick;
             Set_Form(form);
         }
-        private void InstructionsForm_IsBackBtnClick(object sender, EventArgs e)
+
+        private void MenuForm_StoryBtnClick(object sender, EventArgs e)
         {
-            RunForm();
+            StoryForm form = new StoryForm();
+            form.IsBackBtnClick += GameForm_IsExitClick;
+            Set_Form(form);
         }
-
-
 
         private void MenuForm_ExitBtnClick(object sender, EventArgs e)
         {

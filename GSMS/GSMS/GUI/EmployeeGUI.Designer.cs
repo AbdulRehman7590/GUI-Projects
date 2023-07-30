@@ -67,7 +67,7 @@
             // employe_SideMenu_Panel
             // 
             this.employe_SideMenu_Panel.AutoScroll = true;
-            this.employe_SideMenu_Panel.BackColor = System.Drawing.Color.DarkCyan;
+            this.employe_SideMenu_Panel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.employe_SideMenu_Panel.Controls.Add(this.E_LogOut_btn);
             this.employe_SideMenu_Panel.Controls.Add(this.E_Messenger_Panel);
             this.employe_SideMenu_Panel.Controls.Add(this.E_Messenger_btn);
@@ -86,7 +86,7 @@
             // 
             // E_LogOut_btn
             // 
-            this.E_LogOut_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.E_LogOut_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.E_LogOut_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.E_LogOut_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.E_LogOut_btn.Location = new System.Drawing.Point(0, 472);
@@ -133,7 +133,7 @@
             // 
             // E_Messenger_btn
             // 
-            this.E_Messenger_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.E_Messenger_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.E_Messenger_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.E_Messenger_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.E_Messenger_btn.Location = new System.Drawing.Point(0, 367);
@@ -180,7 +180,7 @@
             // 
             // E_Announcement_btn
             // 
-            this.E_Announcement_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.E_Announcement_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.E_Announcement_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.E_Announcement_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.E_Announcement_btn.Location = new System.Drawing.Point(0, 270);
@@ -193,7 +193,7 @@
             // 
             // E_OrdersReceive_btn
             // 
-            this.E_OrdersReceive_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.E_OrdersReceive_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.E_OrdersReceive_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.E_OrdersReceive_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.E_OrdersReceive_btn.Location = new System.Drawing.Point(0, 231);
@@ -240,7 +240,7 @@
             // 
             // E_ProductsDetails_btn
             // 
-            this.E_ProductsDetails_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.E_ProductsDetails_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.E_ProductsDetails_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.E_ProductsDetails_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.E_ProductsDetails_btn.Location = new System.Drawing.Point(0, 132);
@@ -288,7 +288,7 @@
             // 
             // userData_Panel
             // 
-            this.userData_Panel.BackColor = System.Drawing.Color.CadetBlue;
+            this.userData_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(217)))), ((int)(((byte)(214)))));
             this.userData_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userData_Panel.Controls.Add(this.user_PasswordChange_btn);
             this.userData_Panel.Controls.Add(this.userContact_lbl);
@@ -302,9 +302,9 @@
             // user_PasswordChange_btn
             // 
             this.user_PasswordChange_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.user_PasswordChange_btn.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.user_PasswordChange_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.user_PasswordChange_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_PasswordChange_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.user_PasswordChange_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.user_PasswordChange_btn.Location = new System.Drawing.Point(415, 5);
             this.user_PasswordChange_btn.Name = "user_PasswordChange_btn";
             this.user_PasswordChange_btn.Size = new System.Drawing.Size(135, 39);
@@ -318,7 +318,7 @@
             this.userContact_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userContact_lbl.AutoSize = true;
             this.userContact_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userContact_lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userContact_lbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.userContact_lbl.Location = new System.Drawing.Point(241, 19);
             this.userContact_lbl.Name = "userContact_lbl";
             this.userContact_lbl.Size = new System.Drawing.Size(70, 19);
@@ -330,7 +330,7 @@
             this.userName_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userName_lbl.AutoSize = true;
             this.userName_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName_lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.userName_lbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.userName_lbl.Location = new System.Drawing.Point(90, 19);
             this.userName_lbl.Name = "userName_lbl";
             this.userName_lbl.Size = new System.Drawing.Size(90, 19);
@@ -339,7 +339,7 @@
             // 
             // Title_Panel
             // 
-            this.Title_Panel.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.Title_Panel.BackColor = System.Drawing.Color.CadetBlue;
             this.Title_Panel.Controls.Add(this.Main_image);
             this.Title_Panel.Controls.Add(this.MainScreen_Label);
             this.Title_Panel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -353,7 +353,7 @@
             this.Main_image.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Main_image.BackgroundImage = global::GSMS.Properties.Resources.mal__2__removebg_preview;
             this.Main_image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Main_image.Location = new System.Drawing.Point(181, 12);
+            this.Main_image.Location = new System.Drawing.Point(200, 12);
             this.Main_image.Name = "Main_image";
             this.Main_image.Size = new System.Drawing.Size(118, 68);
             this.Main_image.TabIndex = 2;
@@ -366,7 +366,7 @@
             this.MainScreen_Label.Font = new System.Drawing.Font("Times New Roman", 30F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainScreen_Label.ForeColor = System.Drawing.Color.DarkRed;
-            this.MainScreen_Label.Location = new System.Drawing.Point(315, 34);
+            this.MainScreen_Label.Location = new System.Drawing.Point(324, 22);
             this.MainScreen_Label.Name = "MainScreen_Label";
             this.MainScreen_Label.Size = new System.Drawing.Size(181, 46);
             this.MainScreen_Label.TabIndex = 1;

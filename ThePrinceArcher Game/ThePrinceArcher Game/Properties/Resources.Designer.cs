@@ -143,9 +143,9 @@ namespace ThePrinceArcher_Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cover_image {
+        internal static System.Drawing.Bitmap cover {
             get {
-                object obj = ResourceManager.GetObject("cover image", resourceCulture);
+                object obj = ResourceManager.GetObject("cover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +226,16 @@ namespace ThePrinceArcher_Game.Properties {
         internal static System.Drawing.Bitmap steel_gate {
             get {
                 object obj = ResourceManager.GetObject("steel gate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap story {
+            get {
+                object obj = ResourceManager.GetObject("story", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

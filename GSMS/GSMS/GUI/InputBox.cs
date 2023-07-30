@@ -43,6 +43,7 @@ namespace GSMS.GUI
                 Is_Click = true;
                 IsBtnClick?.Invoke(this, e);
                 this.Close();
+                this.Hide();
             }
         }
 

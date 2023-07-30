@@ -28,23 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cover_PB = new System.Windows.Forms.PictureBox();
             this.start_Btn = new System.Windows.Forms.Button();
             this.exit_Btn = new System.Windows.Forms.Button();
             this.instruction_Btn = new System.Windows.Forms.Button();
+            this.story_Btn = new System.Windows.Forms.Button();
+            this.cover_PB = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cover_PB)).BeginInit();
             this.SuspendLayout();
-            // 
-            // cover_PB
-            // 
-            this.cover_PB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cover_PB.Image = global::ThePrinceArcher_Game.Properties.Resources.cover_image;
-            this.cover_PB.Location = new System.Drawing.Point(0, 0);
-            this.cover_PB.Name = "cover_PB";
-            this.cover_PB.Size = new System.Drawing.Size(800, 450);
-            this.cover_PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cover_PB.TabIndex = 1;
-            this.cover_PB.TabStop = false;
             // 
             // start_Btn
             // 
@@ -52,9 +42,9 @@
             this.start_Btn.BackColor = System.Drawing.Color.Brown;
             this.start_Btn.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.start_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.start_Btn.Location = new System.Drawing.Point(495, 98);
+            this.start_Btn.Location = new System.Drawing.Point(259, 174);
             this.start_Btn.Name = "start_Btn";
-            this.start_Btn.Size = new System.Drawing.Size(117, 47);
+            this.start_Btn.Size = new System.Drawing.Size(179, 47);
             this.start_Btn.TabIndex = 1;
             this.start_Btn.Text = "Start";
             this.start_Btn.UseVisualStyleBackColor = false;
@@ -66,9 +56,9 @@
             this.exit_Btn.BackColor = System.Drawing.Color.Brown;
             this.exit_Btn.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exit_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.exit_Btn.Location = new System.Drawing.Point(495, 204);
+            this.exit_Btn.Location = new System.Drawing.Point(259, 333);
             this.exit_Btn.Name = "exit_Btn";
-            this.exit_Btn.Size = new System.Drawing.Size(117, 47);
+            this.exit_Btn.Size = new System.Drawing.Size(179, 47);
             this.exit_Btn.TabIndex = 3;
             this.exit_Btn.Text = "Exit";
             this.exit_Btn.UseVisualStyleBackColor = false;
@@ -80,20 +70,46 @@
             this.instruction_Btn.BackColor = System.Drawing.Color.Brown;
             this.instruction_Btn.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.instruction_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.instruction_Btn.Location = new System.Drawing.Point(495, 151);
+            this.instruction_Btn.Location = new System.Drawing.Point(259, 227);
             this.instruction_Btn.Name = "instruction_Btn";
-            this.instruction_Btn.Size = new System.Drawing.Size(117, 47);
+            this.instruction_Btn.Size = new System.Drawing.Size(179, 47);
             this.instruction_Btn.TabIndex = 2;
             this.instruction_Btn.Text = "Instructions";
             this.instruction_Btn.UseVisualStyleBackColor = false;
             this.instruction_Btn.Click += new System.EventHandler(this.instruction_Btn_Click);
+            // 
+            // story_Btn
+            // 
+            this.story_Btn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.story_Btn.BackColor = System.Drawing.Color.Brown;
+            this.story_Btn.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.story_Btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.story_Btn.Location = new System.Drawing.Point(259, 280);
+            this.story_Btn.Name = "story_Btn";
+            this.story_Btn.Size = new System.Drawing.Size(179, 47);
+            this.story_Btn.TabIndex = 4;
+            this.story_Btn.Text = "Story of the game";
+            this.story_Btn.UseVisualStyleBackColor = false;
+            this.story_Btn.Click += new System.EventHandler(this.story_Btn_Click);
+            // 
+            // cover_PB
+            // 
+            this.cover_PB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cover_PB.Image = global::ThePrinceArcher_Game.Properties.Resources.cover;
+            this.cover_PB.Location = new System.Drawing.Point(0, 0);
+            this.cover_PB.Name = "cover_PB";
+            this.cover_PB.Size = new System.Drawing.Size(984, 661);
+            this.cover_PB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cover_PB.TabIndex = 1;
+            this.cover_PB.TabStop = false;
             // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(984, 661);
+            this.Controls.Add(this.story_Btn);
             this.Controls.Add(this.instruction_Btn);
             this.Controls.Add(this.exit_Btn);
             this.Controls.Add(this.start_Btn);
@@ -111,5 +127,6 @@
         private System.Windows.Forms.Button start_Btn;
         private System.Windows.Forms.Button exit_Btn;
         private System.Windows.Forms.Button instruction_Btn;
+        private System.Windows.Forms.Button story_Btn;
     }
 }

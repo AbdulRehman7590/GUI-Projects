@@ -90,7 +90,7 @@
             // admin_SideMeu_Panel
             // 
             this.admin_SideMeu_Panel.AutoScroll = true;
-            this.admin_SideMeu_Panel.BackColor = System.Drawing.Color.DarkCyan;
+            this.admin_SideMeu_Panel.BackColor = System.Drawing.Color.DarkSlateGray;
             this.admin_SideMeu_Panel.Controls.Add(this.logOut_btn);
             this.admin_SideMeu_Panel.Controls.Add(this.announcement_Options_Panel);
             this.admin_SideMeu_Panel.Controls.Add(this.announcement_btn);
@@ -109,7 +109,7 @@
             // 
             // logOut_btn
             // 
-            this.logOut_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.logOut_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.logOut_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.logOut_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.logOut_btn.Location = new System.Drawing.Point(0, 496);
@@ -157,7 +157,7 @@
             // 
             // announcement_btn
             // 
-            this.announcement_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.announcement_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.announcement_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.announcement_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.announcement_btn.Location = new System.Drawing.Point(0, 397);
@@ -205,7 +205,7 @@
             // 
             // admin_Messenger_btn
             // 
-            this.admin_Messenger_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.admin_Messenger_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.admin_Messenger_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.admin_Messenger_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.admin_Messenger_btn.Location = new System.Drawing.Point(0, 298);
@@ -218,7 +218,7 @@
             // 
             // customer_Traffic_btn
             // 
-            this.customer_Traffic_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.customer_Traffic_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.customer_Traffic_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.customer_Traffic_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.customer_Traffic_btn.Location = new System.Drawing.Point(0, 259);
@@ -253,7 +253,7 @@
             // 
             // employee_Manage_btn
             // 
-            this.employee_Manage_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.employee_Manage_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.employee_Manage_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.employee_Manage_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.employee_Manage_btn.Location = new System.Drawing.Point(0, 190);
@@ -340,7 +340,7 @@
             // 
             // products_Details_btn
             // 
-            this.products_Details_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.products_Details_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.products_Details_btn.Dock = System.Windows.Forms.DockStyle.Top;
             this.products_Details_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.products_Details_btn.Location = new System.Drawing.Point(0, 0);
@@ -365,7 +365,7 @@
             // 
             // userData_Panel
             // 
-            this.userData_Panel.BackColor = System.Drawing.Color.CadetBlue;
+            this.userData_Panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(217)))), ((int)(((byte)(214)))));
             this.userData_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.userData_Panel.Controls.Add(this.user_PasswordChange_btn);
             this.userData_Panel.Controls.Add(this.userContact_lbl);
@@ -380,9 +380,9 @@
             // user_PasswordChange_btn
             // 
             this.user_PasswordChange_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.user_PasswordChange_btn.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.user_PasswordChange_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.user_PasswordChange_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user_PasswordChange_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.user_PasswordChange_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.user_PasswordChange_btn.Location = new System.Drawing.Point(438, 9);
             this.user_PasswordChange_btn.Name = "user_PasswordChange_btn";
             this.user_PasswordChange_btn.Size = new System.Drawing.Size(135, 39);
@@ -396,7 +396,7 @@
             this.userContact_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userContact_lbl.AutoSize = true;
             this.userContact_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userContact_lbl.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.userContact_lbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.userContact_lbl.Location = new System.Drawing.Point(285, 19);
             this.userContact_lbl.Name = "userContact_lbl";
             this.userContact_lbl.Size = new System.Drawing.Size(70, 19);
@@ -408,7 +408,7 @@
             this.userName_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userName_lbl.AutoSize = true;
             this.userName_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName_lbl.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.userName_lbl.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.userName_lbl.Location = new System.Drawing.Point(160, 19);
             this.userName_lbl.Name = "userName_lbl";
             this.userName_lbl.Size = new System.Drawing.Size(90, 19);
@@ -417,7 +417,7 @@
             // 
             // Title_Panel
             // 
-            this.Title_Panel.BackColor = System.Drawing.Color.DarkTurquoise;
+            this.Title_Panel.BackColor = System.Drawing.Color.CadetBlue;
             this.Title_Panel.Controls.Add(this.Main_image);
             this.Title_Panel.Controls.Add(this.MainScreen_Label);
             this.Title_Panel.Dock = System.Windows.Forms.DockStyle.Top;

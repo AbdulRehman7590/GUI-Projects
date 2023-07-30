@@ -64,7 +64,7 @@
             // 
             // Back_btn
             // 
-            this.Back_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.Back_btn.Font = new System.Drawing.Font("Times New Roman", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Back_btn.Location = new System.Drawing.Point(13, 314);

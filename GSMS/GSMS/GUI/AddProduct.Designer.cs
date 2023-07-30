@@ -176,7 +176,7 @@
             // Add_btn
             // 
             this.Add_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Add_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Add_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.Add_btn.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Add_btn.Location = new System.Drawing.Point(589, 362);
@@ -191,7 +191,7 @@
             // Back_btn
             // 
             this.Back_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Back_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.Back_btn.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Back_btn.Location = new System.Drawing.Point(151, 362);

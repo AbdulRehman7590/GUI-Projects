@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.bars_Panel = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.prince_Health_Bar = new System.Windows.Forms.ProgressBar();
             this.enemy_Health_Bar = new System.Windows.Forms.ProgressBar();
             this.enemy_Health_Lbl = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@
             this.prince_Health_Lbl = new System.Windows.Forms.Label();
             this.gameLoop = new System.Windows.Forms.Timer(this.components);
             this.gameForm_Panel = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.bars_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,6 +62,15 @@
             this.bars_Panel.Name = "bars_Panel";
             this.bars_Panel.Size = new System.Drawing.Size(800, 128);
             this.bars_Panel.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 10);
+            this.panel1.TabIndex = 0;
             // 
             // prince_Health_Bar
             // 
@@ -88,9 +97,9 @@
             this.enemy_Health_Lbl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.enemy_Health_Lbl.Location = new System.Drawing.Point(577, 33);
             this.enemy_Health_Lbl.Name = "enemy_Health_Lbl";
-            this.enemy_Health_Lbl.Size = new System.Drawing.Size(122, 24);
+            this.enemy_Health_Lbl.Size = new System.Drawing.Size(132, 24);
             this.enemy_Health_Lbl.TabIndex = 0;
-            this.enemy_Health_Lbl.Text = "Lord Knight :";
+            this.enemy_Health_Lbl.Text = "Lord Shadow :";
             // 
             // arrow_Lbl
             // 
@@ -163,15 +172,6 @@
             this.gameForm_Panel.Name = "gameForm_Panel";
             this.gameForm_Panel.Size = new System.Drawing.Size(800, 322);
             this.gameForm_Panel.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.ForestGreen;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 10);
-            this.panel1.TabIndex = 0;
             // 
             // GameForm
             // 

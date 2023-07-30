@@ -24,5 +24,7 @@ namespace ThePrinceArcher_Game.GUI_Forms
             IsBackBtnClick?.Invoke(this, e);
             this.Close();
         }
+
+
     }
 }

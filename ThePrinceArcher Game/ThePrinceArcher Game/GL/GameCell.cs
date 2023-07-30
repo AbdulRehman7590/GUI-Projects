@@ -16,8 +16,8 @@ namespace ThePrinceArcher_Game.GL
         GameObject currentGameObject;
         GameGrid grid;
         PictureBox pictureBox;
-        const int width = 20;
-        const int height = 22;
+        const int width = 35;
+        const int height = 40;
 
 
         public int X { get => row; set => row = value; }
@@ -26,7 +26,6 @@ namespace ThePrinceArcher_Game.GL
         public PictureBox PictureBox { get => pictureBox; set => pictureBox = value; }
         public GameGrid Grid { get => grid; set => grid = value; }
 
-        
         public GameCell(int row, int col, GameGrid grid)
         {
             this.row = row;

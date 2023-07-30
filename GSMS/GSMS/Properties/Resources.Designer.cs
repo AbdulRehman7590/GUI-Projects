@@ -83,16 +83,6 @@ namespace GSMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap color_mall {
-            get {
-                object obj = ResourceManager.GetObject("color mall", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap emp_bg_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("emp_bg-removebg-preview", resourceCulture);
@@ -103,9 +93,9 @@ namespace GSMS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap main_BG {
+        internal static System.Drawing.Bitmap main_BG1 {
             get {
-                object obj = ResourceManager.GetObject("main_BG", resourceCulture);
+                object obj = ResourceManager.GetObject("main_BG1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

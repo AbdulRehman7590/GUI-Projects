@@ -54,11 +54,13 @@
             // 
             // Bill_TablePanel
             // 
+            this.Bill_TablePanel.BackColor = System.Drawing.Color.DodgerBlue;
             this.Bill_TablePanel.ColumnCount = 2;
             this.Bill_TablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.09091F));
             this.Bill_TablePanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.90909F));
             this.Bill_TablePanel.Controls.Add(this.total_Bill_lbl, 1, 0);
             this.Bill_TablePanel.Controls.Add(this.bill_lbl, 0, 0);
+            this.Bill_TablePanel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Bill_TablePanel.Location = new System.Drawing.Point(52, 286);
             this.Bill_TablePanel.Name = "Bill_TablePanel";
             this.Bill_TablePanel.RowCount = 1;
@@ -107,7 +109,7 @@
             // Back_btn
             // 
             this.Back_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Back_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.Back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Back_btn.Location = new System.Drawing.Point(584, 276);
             this.Back_btn.Margin = new System.Windows.Forms.Padding(4);

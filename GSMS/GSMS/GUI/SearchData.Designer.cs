@@ -62,12 +62,12 @@
             // search_btn
             // 
             this.search_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.search_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.search_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.search_btn.Font = new System.Drawing.Font("Times New Roman", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.search_btn.Location = new System.Drawing.Point(606, 41);
+            this.search_btn.Location = new System.Drawing.Point(603, 36);
             this.search_btn.Name = "search_btn";
-            this.search_btn.Size = new System.Drawing.Size(91, 38);
+            this.search_btn.Size = new System.Drawing.Size(108, 43);
             this.search_btn.TabIndex = 2;
             this.search_btn.Text = "Search";
             this.search_btn.UseVisualStyleBackColor = false;
@@ -91,6 +91,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(90, 47);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";

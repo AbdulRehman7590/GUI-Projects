@@ -15,7 +15,5 @@ namespace GSMS.BL
         {
         }
 
-
-
     }
 }

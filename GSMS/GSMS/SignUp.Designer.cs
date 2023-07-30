@@ -49,7 +49,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.signUp_Contact_txt);
             this.panel1.Controls.Add(this.contact_lbl);
             this.panel1.Controls.Add(this.Back_btn);
@@ -82,7 +82,9 @@
             // 
             this.contact_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.contact_lbl.AutoSize = true;
+            this.contact_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.contact_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contact_lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.contact_lbl.Location = new System.Drawing.Point(123, 233);
             this.contact_lbl.Name = "contact_lbl";
             this.contact_lbl.Size = new System.Drawing.Size(82, 19);
@@ -92,7 +94,7 @@
             // Back_btn
             // 
             this.Back_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Back_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.Back_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.Back_btn.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Back_btn.Location = new System.Drawing.Point(127, 285);
@@ -106,7 +108,7 @@
             // create_Account_btn
             // 
             this.create_Account_btn.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.create_Account_btn.BackColor = System.Drawing.Color.DodgerBlue;
+            this.create_Account_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.create_Account_btn.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.create_Account_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.create_Account_btn.Location = new System.Drawing.Point(333, 285);
@@ -121,7 +123,9 @@
             // 
             this.password_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.password_lbl.AutoSize = true;
+            this.password_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.password_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.password_lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.password_lbl.Location = new System.Drawing.Point(123, 170);
             this.password_lbl.Name = "password_lbl";
             this.password_lbl.Size = new System.Drawing.Size(81, 19);
@@ -132,7 +136,9 @@
             // 
             this.userName_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userName_lbl.AutoSize = true;
-            this.userName_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.userName_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
+            this.userName_lbl.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName_lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.userName_lbl.Location = new System.Drawing.Point(123, 111);
             this.userName_lbl.Name = "userName_lbl";
             this.userName_lbl.Size = new System.Drawing.Size(94, 19);
@@ -166,15 +172,17 @@
             // 
             this.signUp_lbl.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.signUp_lbl.AutoSize = true;
+            this.signUp_lbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(84)))), ((int)(((byte)(136)))));
             this.signUp_lbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.signUp_lbl.Font = new System.Drawing.Font("Times New Roman", 30F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))));
-            this.signUp_lbl.Location = new System.Drawing.Point(132, 18);
+            this.signUp_lbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.signUp_lbl.Location = new System.Drawing.Point(189, 13);
             this.signUp_lbl.Name = "signUp_lbl";
             this.signUp_lbl.Padding = new System.Windows.Forms.Padding(5);
-            this.signUp_lbl.Size = new System.Drawing.Size(290, 58);
+            this.signUp_lbl.Size = new System.Drawing.Size(176, 58);
             this.signUp_lbl.TabIndex = 9;
-            this.signUp_lbl.Text = "Sign Up Screen";
+            this.signUp_lbl.Text = "Sign Up ";
             // 
             // epError
             // 
@@ -190,6 +198,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
+            this.BackgroundImage = global::GSMS.Properties.Resources.main_BG1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 463);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

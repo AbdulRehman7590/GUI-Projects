@@ -14,6 +14,7 @@ namespace ThePrinceArcher_Game.GUI_Forms
     {
         public event EventHandler StartBtnClick;
         public event EventHandler InstructionsBtnClick;
+        public event EventHandler StoryBtnClick;
         public event EventHandler ExitBtnClick;
 
         public MenuForm()
@@ -36,6 +37,12 @@ namespace ThePrinceArcher_Game.GUI_Forms
         private void exit_Btn_Click(object sender, EventArgs e)
         {
             ExitBtnClick?.Invoke(this, e);
+            this.Close();
+        }
+
+        private void story_Btn_Click(object sender, EventArgs e)
+        {
+            StoryBtnClick?.Invoke(this, e);
             this.Close();
         }
     }

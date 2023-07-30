@@ -52,3 +52,4 @@ D:\2nd semester\Assignments\All ZIP files\ThePrinceArcher Game\ThePrinceArcher G
 D:\2nd semester\Assignments\All ZIP files\ThePrinceArcher Game\ThePrinceArcher Game\obj\Debug\ThePrinceArcher Game.exe
 D:\2nd semester\Assignments\All ZIP files\ThePrinceArcher Game\ThePrinceArcher Game\obj\Debug\ThePrinceArcher Game.pdb
 D:\2nd semester\OOP\GUI\ThePrinceArcher Game\ThePrinceArcher Game\obj\Debug\ThePrinceArcher_Game.GUI_Forms.MessageForm.resources
+D:\2nd semester\OOP\GUI\ThePrinceArcher Game\ThePrinceArcher Game\obj\Debug\ThePrinceArcher_Game.GUI_Forms.StoryForm.resources

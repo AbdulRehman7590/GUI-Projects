@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GSMS.BL.Admin" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.BL.Customer" Collapsed="true">
+    <Position X="9.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEUgAAABAAAAAAAAAAAEgAAEAAAAoDAAACAAAACA=</HashCode>
+      <FileName>BL\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.BL.Employee" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.BL.Products" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIAAAIgAAyAAAAAAAAAABAAAAEAACAAAAAAAgEAIABA=</HashCode>
+      <FileName>BL\Products.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.BL.User" Collapsed="true">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAEAAAAAAAAAGAAAABgAAABAAAAGgQAAAgEABAA=</HashCode>
+      <FileName>BL\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.DL.EmployeeDL" Collapsed="true">
+    <Position X="14.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAggBAAAAAAQAhAAAAAAAAAAIgAACAAAEQAAAAQA=</HashCode>
+      <FileName>DL\EmployeeDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.DL.Misc" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEoAAAAAAAIAAAEEIAAAAAJQAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>DL\Misc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.DL.ProductsDL" Collapsed="true">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAIAAAAAAACAAAIAAAAAAAAAgAAACAAgAAkEABAA=</HashCode>
+      <FileName>DL\ProductsDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.DL.UserDL" Collapsed="true">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABACBiAAAAAAgIIASASIkAAIQACAaQAYAhAIAIAAAA=</HashCode>
+      <FileName>DL\UserDL.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.GUI.AddProduct" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAGABCAAACAAgqAQEAKAAQECADACQAwoAAAAAAAABQg=</HashCode>
+      <FileName>GUI\AddProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.GUI.AdminGUI" Collapsed="true">
+    <Position X="7.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GKIkQIgQADR0JUKMFACKgAADCwATAKHgRGEB4RQJCgI=</HashCode>
+      <FileName>GUI\AdminGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.GUI.CustomerGUI" Collapsed="true">
+    <Position X="9.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAQQACBCbYACAJSFwIATAAAQgIEAICIJY4ABEAI=</HashCode>
+      <FileName>GUI\CustomerGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.GUI.EmployeeGUI" Collapsed="true">
+    <Position X="12" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgBxAARACBgNAAIAAKIgDQCIgAREIIAJiBRcBhFBII=</HashCode>
+      <FileName>GUI\EmployeeGUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.GUI.InputBox" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAACAQACBAAgIAAgCDAAACAgADQAQgAAAQAAAAAEA=</HashCode>
+      <FileName>GUI\InputBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.GUI.ReadMessages" Collapsed="true">
+    <Position X="7.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAAAAAACAAAAAAAACAAAACAAACAAQACAAAAAAAAAA=</HashCode>
+      <FileName>GUI\ReadMessages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.GUI.SearchData" Collapsed="true">
+    <Position X="11" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAESEABACQAghAECUCAAAACAAAAAgBiBAQAAAABAwQ=</HashCode>
+      <FileName>GUI\SearchData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.GUI.ViewUsers" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFEAAAAIACACAAAgAACAAAQCBAACAAQAAgAAAQAAAQQ=</HashCode>
+      <FileName>GUI\ViewUsers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.GUI.WatchProducts" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAggAAACCACACAAIGAABICAAACQAQAAgAgAQAAAQA=</HashCode>
+      <FileName>GUI\WatchProducts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.Log_In" Collapsed="true">
+    <Position X="9.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAKAAAkAiABCAAAACACACBBQkAAAAQQAAKAA=</HashCode>
+      <FileName>Log In.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.Main_Menu" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQBACASAAEEABBECMAMCKAAAAgAEAACABAQABAAA=</HashCode>
+      <FileName>Main_Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GSMS.SignUp" Collapsed="true">
+    <Position X="13.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAQAAIOARAyBAAACIEABSAAACAAQgEAAAQQEBAgI=</HashCode>
+      <FileName>SignUp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
