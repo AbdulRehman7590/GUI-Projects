@@ -181,18 +181,18 @@ namespace GSMS.DL
             if (idx != -1)
             {
                 List<string> list = null;
-                int count = 1;
+                bool count = false;
                 foreach (var x in Message)
                 {
                     if (x[0] == receiver && x[1] == loginName)
                     {
                         list = x;
+                        count = true;
                         break;
                     }
-                    count++;
                 }
 
-                if (count > Message.Count)
+                if (!count)
                 {
                     list = new List<string>();
                     list.Add(receiver);
@@ -202,7 +202,7 @@ namespace GSMS.DL
                 string msg1 = "==>>" + msg;
                 list.Add(msg1);
 
-                if (count > Message.Count)
+                if (!count)
                 {
                     Message.Add(list);
                 }

@@ -78,7 +78,6 @@ namespace GSMS
         private void OpenSignUpForm(UserType user)
         {
             Form nform = new SignUp(user);
-            this.Hide();
             nform.ShowDialog();
         }
 
@@ -133,7 +132,6 @@ namespace GSMS
                     OpenSignUpForm(UserType.Employee);
                 }
                 
-                this.Close();
             }
             else
             {

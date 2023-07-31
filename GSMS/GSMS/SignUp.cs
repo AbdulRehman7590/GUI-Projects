@@ -117,8 +117,8 @@ namespace GSMS
 
         private void Back_btn_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Main_Menu form = new Main_Menu();
+            this.Hide();
             form.Show();
         }
 
